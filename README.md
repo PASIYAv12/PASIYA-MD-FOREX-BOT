@@ -17,3 +17,16 @@ PASIYA-MD-FOREX-BIT-BASE/
 │
 ├── README.md
 └── run.sh
+# PASIYA-MD FOREX BIT BASE
+> Multi-pair MT5 Forex Bot with Telegram integration, SQLite database, and Flask Dashboard.
+
+### Features:
+- MT5 Live Trade Execution
+- Telegram Bot (Signal & Trade Notifications)
+- SQLite Trade Logging
+- Flask Web Dashboard
+
+### Run:
+```bash
+pip install -r requirements.txt
+python3 main.py
