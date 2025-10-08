@@ -12,7 +12,7 @@ class TelegramBot:
         self.app.add_handler(CommandHandler("trades", self.show_trades))
 
     async def start(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        await update.message.reply_text("🚀 PASIYA-MD FOREX BIT BASE Online!")
+        await update.message.reply_text("🚀 PASIYA-MD FOREX BOT BASE Online!")
 
     async def show_trades(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         trades = self.db.conn.execute("SELECT * FROM trades ORDER BY id DESC LIMIT 5").fetchall()
